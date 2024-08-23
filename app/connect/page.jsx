@@ -74,7 +74,7 @@ const page = () => {
   };
 
   return (
-    <div className="bg-[#15152E]">
+    <div className="bg-[#090f14]">
       {/* <Header /> */}
       {/* <Head> */}
       <nav className="flex items-start leading-5 z-50 p-5">
