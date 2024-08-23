@@ -96,6 +96,12 @@ const Hero = () => {
             >
               Whitepaper
             </button>
+            <button
+              
+              className="connect-wallet text-[#0F1212] cursor-pointer px-[4.5px] py-[6px] md:px-1.5 md:py-1.5 bg-gradient-to-r from-[#20A4F3] to-[#59F8E8] w-full font-semibold text-base rounded-md"
+            >
+              Connect Web2
+            </button>
           </div>
           <div className="w-full flex items-center justify-between md:w-4/5 lg:w-full xl:w-4/5 mt-8 md:mt-16 text-2xl md:text-4xl leading-10">
             <div>

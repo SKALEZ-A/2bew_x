@@ -541,6 +541,9 @@ video {
     max-width: 1536px;
   }
 }
+.visible {
+  visibility: visible;
+}
 .static {
   position: static;
 }
@@ -805,6 +808,9 @@ video {
 .flex-1 {
   flex: 1 1 0%;
 }
+.grow {
+  flex-grow: 1;
+}
 .table-auto {
   table-layout: auto;
 }
@@ -905,6 +911,11 @@ video {
 .place-self-end {
   place-self: end;
 }
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .rounded {
   border-radius: 0.25rem;
 }
@@ -997,6 +1008,26 @@ video {
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-\[\#0f0f22\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 15 34 / var(--tw-bg-opacity));
+}
+.bg-\[\#0f1f22\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 31 34 / var(--tw-bg-opacity));
+}
+.bg-\[\#0a1517\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 21 23 / var(--tw-bg-opacity));
+}
+.bg-\[\#091214\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 18 20 / var(--tw-bg-opacity));
+}
+.bg-\[\#090f14\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 15 20 / var(--tw-bg-opacity));
 }
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
@@ -1179,6 +1210,9 @@ video {
 .lowercase {
   text-transform: lowercase;
 }
+.italic {
+  font-style: italic;
+}
 .leading-10 {
   line-height: 2.5rem;
 }
@@ -1257,6 +1291,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(202 138 4 / var(--tw-text-opacity));
 }
+.underline {
+  text-decoration-line: underline;
+}
 .opacity-50 {
   opacity: 0.5;
 }
@@ -1303,6 +1340,17 @@ video {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
 }
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .backdrop-blur-sm {
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1336,12 +1384,12 @@ video {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 @keyframes customBounce {
