@@ -16,6 +16,7 @@ import trust from "@/public/image/trust_wallet.png";
 import safepal from "@/public/image/safepal.jpeg";
 import ledger from "@/public/image/ledger.webp";
 import keplr from "@/public/image/keplr.png";
+import tron from "/public/image/tron.png";
 
 const Hero = () => {
   const [showTermsModal, setShowTermsModal] = useState(false);
@@ -60,10 +61,12 @@ const Hero = () => {
   const walletData = [
     { name: "WalletConnect", image: wallet },
     { name: "Metamask", image: metamask },
+    { name: "Tronlink Pro", image: tron },
     { name: "Coinbase", image: coinbase },
     { name: "Phantom", image: phantom },
     { name: "Trust Wallet", image: trust },
     { name: "Keplr Wallet", image: keplr },
+    { name: "Tronlink", image: tron },
     { name: "Safepal", image: safepal },
     { name: "Ledger", image: ledger },
     { name: "Other wallets", image: other },
